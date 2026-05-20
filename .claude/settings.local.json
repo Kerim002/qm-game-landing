@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "PowerShell(Invoke-RestMethod -Uri \"https://api.github.com/repos/anthropics/claude-code/contents/plugins/frontend-design/README.md\" -ErrorAction SilentlyContinue)"
+    ]
+  }
+}
