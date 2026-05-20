@@ -124,7 +124,7 @@
 	];
 </script>
 
-<section class="chars-section web-bg" id="characters">
+<section class="chars-section" id="characters">
 	<div class="container">
 
 		<div class="section-head reveal" style="text-align:center;margin-bottom:56px;">
@@ -152,11 +152,12 @@
 							<img src="{char.img}" alt="{char.name}" class="char-img" loading="lazy" />
 						-->
 						<div class="img-placeholder char-img-placeholder">
-							<div class="placeholder-inner">
+							<!-- <div class="placeholder-inner">
 								<span class="placeholder-icon">{char.placeholder}</span>
 								<span class="placeholder-text">{char.name} sprite</span>
 								<span class="placeholder-size">256 × 256 px · PNG</span>
-							</div>
+							</div> -->
+							<img src={char.img} style="width: 100%; height: 100%; object-fit: cover;" alt={char.name}>
 						</div>
 					</div>
 
@@ -173,7 +174,10 @@
 <style>
 	/* ── SECTION ─────────────────────────── */
 	.chars-section {
-		background: var(--blue);
+				background: var(--blue) url('/mesh/web.png') repeat;
+		background-size: 220px;
+		/* background: var(--blue);
+		padding: 96px 0; */
 		padding: 96px 0;
 	}
 	.chars-grid {

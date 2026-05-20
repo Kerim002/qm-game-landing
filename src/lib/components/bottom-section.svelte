@@ -12,7 +12,7 @@
 	];
 </script>
 
-<section class="cta-section web-bg">
+<section class="cta-section">
 
 	<!-- Floating star particles -->
 	{#each particles as p}
@@ -55,10 +55,11 @@
 				toward the CTA text. No additional art needed — reuse the same PNG.
 			-->
 			<div class="img-placeholder decor-placeholder decor-left">
-				<div class="placeholder-inner">
+				<!-- <div class="placeholder-inner">
 					<span class="placeholder-icon">🐧</span>
 					<span class="placeholder-text">Penguin — reuse /images/penguin_classic.png (mirrored via CSS)</span>
-				</div>
+				</div> -->
+				<img src="/images/teddy_classic.png" alt="Cute cartoon Penguin character" style="width: 100%; height: 100%; object-fit: cover;">
 			</div>
 
 			<!--
@@ -70,10 +71,11 @@
 				Displayed facing left toward the CTA text. No additional art needed.
 			-->
 			<div class="img-placeholder decor-placeholder decor-right">
-				<div class="placeholder-inner">
+				<!-- <div class="placeholder-inner">
 					<span class="placeholder-icon">🐼</span>
 					<span class="placeholder-text">Panda — reuse /images/panda_classic.png</span>
-				</div>
+				</div> -->
+				<img src="/images/chick_classic.png" alt="Cute cartoon Panda character" style="width: 100%; height: 100%; object-fit: cover;  transform: scaleX(-1);">
 			</div>
 		</div>
 	</div>
@@ -82,7 +84,9 @@
 <style>
 	/* ── SECTION ─────────────────────────── */
 	.cta-section {
-		background: var(--blue);
+		/* background: var(--blue); */
+		background: var(--blue) url('/mesh/web.png') repeat;
+		background-size: 220px;
 		padding: 120px 24px;
 		position: relative;
 		overflow: hidden;

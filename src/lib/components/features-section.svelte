@@ -84,6 +84,7 @@
 						<div class="feat-phone-screen">
 
 							{#if feat.eyebrow === 'PVP Mode'}
+							<img src="/images/shop.jpg" alt="In-game battle board screenshot showing a quiz question popup and player avatars" style="width:100%;height:100%;object-fit:cover;"/>
 								<!--
 									📸 IMAGE TO CREATE: PVP Battle Screen
 									File: /images/pvp.jpg  |  Size: 390 × 760 px JPEG portrait
@@ -99,6 +100,7 @@
 									Style: Vivid high-energy. Feels like a live eSports moment.
 								-->
 							{:else if feat.eyebrow === 'Knowledge'}
+							<img  src="/images/questions.jpg" alt="In-game battle board screenshot showing a quiz question popup and player avatars" style="width:100%;height:100%;object-fit:cover;"/>
 								<!--
 									📸 IMAGE TO CREATE: Category Selection Screen
 									File: /images/questions.jpg  |  Size: 390 × 760 px JPEG portrait
@@ -114,6 +116,8 @@
 									Style: Colourful playful app UI, rounded card corners, light BG
 								-->
 							{:else if feat.eyebrow === 'Strategy'}
+							<img  src="/images/learn.jpg" alt="In-game battle board screenshot showing a quiz question popup and player avatars" style="width:100%;height:100%;object-fit:cover;"/>
+
 								<!--
 									📸 IMAGE TO CREATE: In-Game Shop Screen
 									File: /images/shop.jpg  |  Size: 390 × 760 px JPEG portrait
@@ -130,6 +134,8 @@
 									Style: RPG shop aesthetic — dark glass overlay, glowing cards
 								-->
 							{:else if feat.eyebrow === 'Learning'}
+							<img  src="/images/skills.jpg" alt="In-game battle board screenshot showing a quiz question popup and player avatars" style="width:100%;height:100%;object-fit:cover;"/>
+
 								<!--
 									📸 IMAGE TO CREATE: Post-Game Review Screen
 									File: /images/learn.jpg  |  Size: 390 × 760 px JPEG portrait
@@ -147,6 +153,8 @@
 									Style: Clean educational UI, bright green/red feedback colors
 								-->
 							{:else if feat.eyebrow === 'Progression'}
+							<img  src="/images/customize.jpg" alt="In-game battle board screenshot showing a quiz question popup and player avatars" style="width:100%;height:100%;object-fit:cover;"/>
+
 								<!--
 									📸 IMAGE TO CREATE: Player Profile & Stats Screen
 									File: /images/skills.jpg  |  Size: 390 × 760 px JPEG portrait
@@ -161,6 +169,8 @@
 									Style: Profile/dashboard aesthetic, bold numbers, clean layout
 								-->
 							{:else if feat.eyebrow === 'Customization'}
+							<img  src="/images/hero.jpg" alt="In-game battle board screenshot showing a quiz question popup and player avatars" style="width:100%;height:100%;object-fit:cover;"/>
+
 								<!--
 									📸 IMAGE TO CREATE: Character & Skin Selection Screen
 									File: /images/customize.jpg  |  Size: 390 × 760 px JPEG portrait

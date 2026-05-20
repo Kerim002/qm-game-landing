@@ -8,12 +8,7 @@
 	});
 </script>
 
-<section class="hero web-bg" id="top">
-
-	<!-- Slowly drifting colour orbs — add depth to the flat blue background -->
-	<div class="orb orb-1" aria-hidden="true"></div>
-	<div class="orb orb-2" aria-hidden="true"></div>
-	<div class="orb orb-3" aria-hidden="true"></div>
+<section class="hero" id="top">
 
 	<div class="hero-wrap container">
 
@@ -88,11 +83,13 @@
 			-->
 			<div class="float-char fc-left" aria-hidden="true">
 				<div class="img-placeholder" style="width:100px;height:120px;border-radius:14px;">
-					<div class="placeholder-inner">
+					<!-- <div class="placeholder-inner">
 						<span class="placeholder-icon">🐧</span>
 						<span class="placeholder-text">Penguin character — excited pose, tilted left</span>
 						<span class="placeholder-size">140 × 160 px · PNG transparent</span>
-					</div>
+					</div> -->
+					<img style="width:100%;height:100%;object-fit:cover;"  src="/images/penguin_classic.png" alt="Cute cartoon Penguin character">
+
 				</div>
 			</div>
 
@@ -110,12 +107,13 @@
 				· NO background (transparent PNG)
 			-->
 			<div class="float-char fc-right" aria-hidden="true">
-				<div class="img-placeholder" style="width:90px;height:110px;border-radius:14px;">
-					<div class="placeholder-inner">
+				<div class="img-placeholder" style="width:90px;height:110px;border-radius:14px; ">
+					<!-- <div class="placeholder-inner">
 						<span class="placeholder-icon">🐼</span>
 						<span class="placeholder-text">Panda — holding trophy, tilted right</span>
 						<span class="placeholder-size">120 × 140 px · PNG transparent</span>
-					</div>
+					</div> -->
+					<img style="width:100%;height:100%;object-fit:cover;  transform: scaleX(-1);"  src="/images/panda_classic.png" alt="Cute cartoon Panda character">
 				</div>
 			</div>
 
@@ -148,14 +146,14 @@
 							· XP counter "+ 80 XP" floating in gold near top-centre
 							Style: Vibrant mobile-game UI, high saturation, bold fonts
 						-->
-						<div class="img-placeholder" style="border-radius:0;border:none;">
+						<!-- <div class="img-placeholder" style="border-radius:0;border:none;">
 							<div class="placeholder-inner">
 								<span class="placeholder-icon">🎮</span>
 								<span class="placeholder-text">Game board — tiles, avatars, trivia question popup, timer</span>
 								<span class="placeholder-size">390 × 760 px · JPEG portrait</span>
 							</div>
-						</div>
-
+						</div> -->
+						<img src="/images/shop.jpg" alt="In-game battle board screenshot showing a quiz question popup and player avatars" style="width:100%;height:100%;object-fit:cover;">
 					</div>
 				</div>
 
@@ -179,7 +177,8 @@
 <style>
 	/* ── SECTION ────────────────────────── */
 	.hero {
-		background: var(--blue);
+		background: var(--blue) url('/mesh/web.png') repeat;
+		background-size: 220px;
 		min-height: 640px;
 		position: relative;
 		overflow: hidden;
@@ -193,33 +192,6 @@
 		padding-bottom: 100px;
 		position: relative;
 		z-index: 1;
-	}
-
-	/* ── BACKGROUND ORBS ─────────────────── */
-	.orb {
-		position: absolute;
-		border-radius: 50%;
-		pointer-events: none;
-		filter: blur(72px);
-		z-index: 0;
-	}
-	.orb-1 {
-		width: 500px; height: 500px;
-		background: rgba(255,255,255,0.07);
-		top: -160px; right: -120px;
-		animation: orb-drift 14s ease-in-out infinite;
-	}
-	.orb-2 {
-		width: 340px; height: 340px;
-		background: rgba(255,217,74,0.10);
-		bottom: -60px; left: -90px;
-		animation: orb-drift-2 18s ease-in-out infinite;
-	}
-	.orb-3 {
-		width: 240px; height: 240px;
-		background: rgba(76,205,107,0.09);
-		top: 55%; left: 38%;
-		animation: orb-drift 22s ease-in-out infinite reverse;
 	}
 
 	/* ── BADGE ───────────────────────────── */
