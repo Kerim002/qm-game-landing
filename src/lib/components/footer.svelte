@@ -9,8 +9,9 @@
             <a href="#characters">Characters</a>
             <a href="#how">How to Play</a>
             <a href="#faq">FAQ</a>
-            <a href="/privacy">Privacy Policy</a>
-            <a href="/terms">Terms of Service</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-use">Terms of Use</a>
+            <a href="/data-deletion">Data Deletion</a>
             <a href="/support">Support</a>
         </nav>
     </div>
