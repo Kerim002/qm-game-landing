@@ -10,10 +10,9 @@
 	import TopSection from "../lib/components/top-section.svelte";
 	import StatsBar from "../lib/components/stats-bar.svelte";
     import VideoSection from "$lib/components/video-section.svelte";
+    import SEO from "$lib/components/SEO.svelte";
 
-	// ── Svelte 5 runes ─────────────────────────
 
-	// Scroll reveal
 	onMount(() => {
 		const els = document.querySelectorAll(".reveal");
 		const obs = new IntersectionObserver(
@@ -28,6 +27,7 @@
 	});
 </script>
 
+<SEO/>
 
 <Navbar />
 
