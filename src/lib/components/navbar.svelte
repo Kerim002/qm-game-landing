@@ -81,12 +81,12 @@
             aria-label="Navigation menu"
         >
             <ul role="list">
-                <li><a href="#features" onclick={closeMenu}>Features</a></li>
+                <li><a href={isHome ? "#features" : "/#features"} onclick={closeMenu}>Features</a></li>
                 <li>
-                    <a href="#characters" onclick={closeMenu}>Characters</a>
+                    <a href={isHome ? "#characters" : "/#characters"} onclick={closeMenu}>Characters</a>
                 </li>
-                <li><a href="#how" onclick={closeMenu}>How to Play</a></li>
-                <li><a href="#faq" onclick={closeMenu}>FAQ</a></li>
+                <li><a href={isHome ? "#how" : "/#how"} onclick={closeMenu}>How to Play</a></li>
+                <li><a  href={isHome ? "#faq" : "/#faq"} onclick={closeMenu}>FAQ</a></li>
             </ul>
             <a
                 href="#features"
