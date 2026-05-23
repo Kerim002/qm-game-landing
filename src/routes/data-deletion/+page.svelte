@@ -1,22 +1,37 @@
+<script lang="ts">
+	import Navbar from "../../lib/components/navbar.svelte";
+	import Footer from "../../lib/components/footer.svelte";
+</script>
+
 <svelte:head>
 	<title>Data Deletion — Quiz Masters</title>
 </svelte:head>
 
+<Navbar />
 <section class="policy-page">
 	<div class="container">
 		<p class="eyebrow">Data Deletion</p>
 		<h1 class="section-title">Request account and data removal</h1>
 		<p class="section-sub">
-			If you want your Quiz Masters account and all associated data removed, follow the instructions below.
+			If you want your Quiz Masters account and all associated data
+			removed, follow the instructions below.
 		</p>
 		<a href="/" class="btn btn-white policy-back">Back to Home</a>
 
 		<div class="policy-card">
 			<h2>How to request deletion</h2>
 			<ol>
-				<li>Send an email to <a href="mailto:ahmed.hojakuliyev@gmail.com">ahmed.hojakuliyev@gmail.com</a>.</li>
+				<li>
+					Send an email to <a
+						href="mailto:ahmed.hojakuliyev@gmail.com"
+						>ahmed.hojakuliyev@gmail.com</a
+					>.
+				</li>
 				<li>Include your Account ID (visible inside the game).</li>
-				<li>Confirm that you want your account and all related data permanently deleted.</li>
+				<li>
+					Confirm that you want your account and all related data
+					permanently deleted.
+				</li>
 			</ol>
 		</div>
 
@@ -34,14 +49,23 @@
 		<div class="policy-card">
 			<h2>What data is retained and why</h2>
 			<ul>
-				<li>Transaction records (required by law) — retained for up to 5 years.</li>
-				<li>Server logs for security and anti-fraud — retained for up to 30 days.</li>
+				<li>
+					Transaction records (required by law) — retained for up to 5
+					years.
+				</li>
+				<li>
+					Server logs for security and anti-fraud — retained for up to
+					30 days.
+				</li>
 			</ul>
 		</div>
 
 		<div class="policy-card">
 			<h2>What cannot be recovered</h2>
-			<p>Once deletion is completed, your account and game progress cannot be restored.</p>
+			<p>
+				Once deletion is completed, your account and game progress
+				cannot be restored.
+			</p>
 		</div>
 
 		<div class="policy-card">
@@ -51,11 +75,18 @@
 
 		<div class="policy-card policy-contact">
 			<h2>Contact</h2>
-			<p>If you have any questions, email <a href="mailto:ahmed.hojakuliyev@gmail.com">ahmed.hojakuliyev@gmail.com</a>.</p>
+			<p>
+				If you have any questions, email <a
+					href="mailto:ahmed.hojakuliyev@gmail.com"
+					>ahmed.hojakuliyev@gmail.com</a
+				>.
+			</p>
 			<p class="policy-note">Last updated: November 22nd, 2025</p>
 		</div>
 	</div>
 </section>
+
+<Footer />
 
 <style>
 	.policy-page {

@@ -9,6 +9,7 @@
 	import FeaturesSection from "../lib/components/features-section.svelte";
 	import TopSection from "../lib/components/top-section.svelte";
 	import StatsBar from "../lib/components/stats-bar.svelte";
+    import VideoSection from "$lib/components/video-section.svelte";
 
 	// ── Svelte 5 runes ─────────────────────────
 
@@ -34,6 +35,7 @@
 
 <StatsBar />
 
+<VideoSection />
 <FeaturesSection />
 
 <CharsSection />

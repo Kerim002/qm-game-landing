@@ -1,7 +1,14 @@
+<script lang="ts">
+
+import Navbar from "../../lib/components/navbar.svelte";
+import Footer from "../../lib/components/footer.svelte";
+</script>
+
 <svelte:head>
 	<title>Terms of Use — Quiz Masters</title>
-</svelte:head>
 
+</svelte:head>
+<Navbar/>
 <section class="policy-page">
 	<div class="container">
 		<p class="eyebrow">Terms of Use</p>
@@ -97,7 +104,7 @@
 		</div>
 	</div>
 </section>
-
+<Footer/>
 <style>
 	.policy-page {
 		padding: 80px 0 120px;

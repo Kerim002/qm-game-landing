@@ -1,8 +1,10 @@
-<script>
+<script lang="ts">
+    import { page } from "$app/stores";
     let menuOpen = $state(false);
     function closeMenu() {
         menuOpen = false;
     }
+    const isHome = $derived($page.url.pathname === "/");
 </script>
 
 <nav class="web-bg" aria-label="Main navigation">
@@ -13,10 +15,32 @@
             >asters
         </a>
         <ul class="nav-links" role="list">
-            <li><a href="#features" onclick={closeMenu}>Features</a></li>
-            <li><a href="#characters" onclick={closeMenu}>Characters</a></li>
-            <li><a href="#how" onclick={closeMenu}>How to Play</a></li>
-            <li><a href="#faq" onclick={closeMenu}>FAQ</a></li>
+            <li>
+                <a
+                    href={isHome ? "#features" : "/#features"}
+                    onclick={closeMenu}
+                >
+                    Features
+                </a>
+            </li>
+            <li>
+                <a
+                    href={isHome ? "#characters" : "/#characters"}
+                    onclick={closeMenu}
+                >
+                    Characters
+                </a>
+            </li>
+            <li>
+                <a href={isHome ? "#how" : "/#how"} onclick={closeMenu}>
+                    How to Play
+                </a>
+            </li>
+            <li>
+                <a href={isHome ? "#faq" : "/#faq"} onclick={closeMenu}>
+                    FAQ
+                </a>
+            </li>
         </ul>
         <a href="#features" class="btn btn-white nav-btn">
             <svg

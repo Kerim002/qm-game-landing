@@ -1,3 +1,10 @@
+<script lang="ts">
+    import { page } from "$app/stores";
+
+    
+    const isHome = $derived($page.url.pathname === "/")
+</script>
+
 <footer>
     <div class="footer-inner container">
         <div class="footer-brand">
@@ -5,14 +12,14 @@
             <p class="footer-copy">© 2026 Quiz Masters. All rights reserved.</p>
         </div>
         <nav class="footer-nav" aria-label="Footer navigation">
-            <a href="#features">Features</a>
-            <a href="#characters">Characters</a>
-            <a href="#how">How to Play</a>
-            <a href="#faq">FAQ</a>
+            <a href={isHome ? "#features" : "/#features"}>Features</a>
+            <a href={isHome ? "#characters" : "/#characters"}>Characters</a>
+            <a href={isHome ? "#how" : "/#how"}>How to Play</a>
+            <a href={isHome ? "#faq" : "/#faq"}>FAQ</a>
             <a href="/privacy-policy">Privacy Policy</a>
             <a href="/terms-of-use">Terms of Use</a>
             <a href="/data-deletion">Data Deletion</a>
-            <a href="/support">Support</a>
+            <!-- <a href="/support">Support</a> -->
         </nav>
     </div>
 </footer>
