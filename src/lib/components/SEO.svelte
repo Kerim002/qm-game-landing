@@ -4,7 +4,7 @@
 	let { 
 		title = 'Quiz masters', 
 		description = 'Quiz Masters: Trivia Tactics',
-		url = 'http://45.85.147.200:3333'
+		url = 'https://quizmasters.beaconarc.xyz'
 	} = $props();
 </script>
 
@@ -13,6 +13,7 @@
 	<title>{title}</title>
 	<meta name="description" content={description} />
 	<link rel="canonical" href={url} />
+	<meta name="google-site-verification" content="h6Aam-QY-hQiexphLguJx05lEbfXtEAtmUXX0sUEMJY" />
 
 	<!-- Open Graph / Chat Apps (Telegram, imo, WhatsApp, Discord) -->
 	<meta property="og:type" content="website" />

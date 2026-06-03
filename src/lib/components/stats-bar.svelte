@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 
 	const stats = [
-		{ target: 5000, format: (n:any) => `${n}`, label: 'Players',    decimal: false, icon: '👥' },
+		{ target: 10000, format: (n:any) => `${n}`, label: 'Players',    decimal: false, icon: '👥' },
 		{ target: 6, format: (n:any) => `${n}`,  label: 'Subjects', decimal: false, icon: '📚' },
 		// { target: 4.8, format: (n:any) => `${n} ★`, label: 'App Rating', decimal: true,  icon: '⭐' },
 		{ target: null,format: () => 'Free',   label: 'To Play',   decimal: false, icon: '🎁' },
