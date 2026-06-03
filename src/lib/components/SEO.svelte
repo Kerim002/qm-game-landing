@@ -1,8 +1,7 @@
 <!-- src/lib/components/SEO.svelte -->
 <script lang="ts">
-	// Svelte 5 prop destructuring with defaults
 	let { 
-		title = 'Quiz masters', 
+		title = 'Quiz Masters', 
 		description = 'Quiz Masters: Trivia Tactics',
 		url = 'https://quizmasters.beaconarc.xyz'
 	} = $props();
@@ -13,7 +12,6 @@
 	<title>{title}</title>
 	<meta name="description" content={description} />
 	<link rel="canonical" href={url} />
-	<meta name="google-site-verification" content="h6Aam-QY-hQiexphLguJx05lEbfXtEAtmUXX0sUEMJY" />
 
 	<!-- Open Graph / Chat Apps (Telegram, imo, WhatsApp, Discord) -->
 	<meta property="og:type" content="website" />
