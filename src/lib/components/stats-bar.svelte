@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 
 	const stats = [
-		{ target: 500, format: n => `${n}K+`, label: 'Players',    decimal: false, icon: '👥' },
-		{ target: 100, format: n => `${n}+`,  label: 'Categories', decimal: false, icon: '📚' },
-		{ target: 4.8, format: n => `${n} ★`, label: 'App Rating', decimal: true,  icon: '⭐' },
+		{ target: 5000, format: (n:any) => `${n}`, label: 'Players',    decimal: false, icon: '👥' },
+		{ target: 6, format: (n:any) => `${n}`,  label: 'Subjects', decimal: false, icon: '📚' },
+		// { target: 4.8, format: (n:any) => `${n} ★`, label: 'App Rating', decimal: true,  icon: '⭐' },
 		{ target: null,format: () => 'Free',   label: 'To Play',   decimal: false, icon: '🎁' },
 	];
 
@@ -24,7 +24,7 @@
 				const dur = 1700;
 				const t0 = performance.now();
 
-				const tick = (now) => {
+				const tick = (now:any) => {
 					const p   = Math.min((now - t0) / dur, 1);
 					const ease = 1 - (1 - p) ** 3;  // ease-out cubic
 					counts[i] = s.decimal

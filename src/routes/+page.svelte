@@ -9,9 +9,10 @@
 	import FeaturesSection from "../lib/components/features-section.svelte";
 	import TopSection from "../lib/components/top-section.svelte";
 	import StatsBar from "../lib/components/stats-bar.svelte";
-    import VideoSection from "$lib/components/video-section.svelte";
-    import SEO from "$lib/components/SEO.svelte";
+	import VideoSection from "$lib/components/video-section.svelte";
+	import SEO from "$lib/components/SEO.svelte";
 
+	
 
 	onMount(() => {
 		const els = document.querySelectorAll(".reveal");
@@ -27,7 +28,7 @@
 	});
 </script>
 
-<SEO/>
+<SEO />
 
 <Navbar />
 

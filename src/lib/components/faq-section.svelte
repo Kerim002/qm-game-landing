@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
     let openFaq = $state(null);
 
-    function toggleFaq(i) {
+    function toggleFaq(i: any) {
         openFaq = openFaq === i ? null : i;
     }
 
@@ -12,7 +12,7 @@
         },
         {
             q: "Is it free to play?",
-            a: "Yes! The core game is completely free on web, iOS, and Android. Cosmetic items can be unlocked using in-game coins you earn by playing.",
+            a: "Yes! The core game is completely free on iOS, and Android. Cosmetic items can be unlocked using in-game coins you earn by playing.",
         },
         {
             q: "Do I need to create an account?",
@@ -20,7 +20,7 @@
         },
         {
             q: "How do power-ups work?",
-            a: "Earn coins by winning matches, then spend them in the in-game shop. Clue Flower removes 2 wrong answers, Teleport moves you to any captured tile, and Heal restores 20 HP.",
+            a: "Earn coins by winning matches, then spend them in the in-game shop. Clue Flower removes 2 wrong answers, Teleport moves you to any captured tile, and Heal restores HP.",
         },
         {
             q: "Is there a mobile app?",
@@ -35,10 +35,15 @@
 
 <section class="faq-section" id="faq">
     <div class="container faq-container">
-        <div class="section-head reveal" style="text-align:center; margin-bottom:48px;">
+        <div
+            class="section-head reveal"
+            style="text-align:center; margin-bottom:48px;"
+        >
             <span class="eyebrow">FAQ</span>
             <h2 class="section-title">Got <span>Questions?</span></h2>
-            <p class="section-sub">Everything you need to know before playing</p>
+            <p class="section-sub">
+                Everything you need to know before playing
+            </p>
         </div>
         <div class="faq-list reveal">
             {#each faqs as faq, i}
@@ -51,7 +56,25 @@
                         aria-controls="faq-answer-{i}"
                     >
                         <span>{faq.q}</span>
-                        <span class="faq-icon" class:flipped={isOpen} aria-hidden="true">▼</span>
+                        <span
+                            class="faq-icon"
+                            class:flipped={isOpen}
+                            aria-hidden="true"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                                ><path d="m6 9 6 6 6-6" /></svg
+                            >
+                        </span>
                     </button>
                     <div
                         id="faq-answer-{i}"
