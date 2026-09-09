@@ -22,7 +22,7 @@
 	<!-- Absolute path to the preview image -->
 	<meta property="og:image" content="{url}/images/pvp.jpg" />
 	<meta property="og:image:secure_url" content="{url}/images/pvp.jpg" />
-	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:type" content="image/jpg" />
 	
 	<!-- CRITICAL FOR CHAT APPS: Tells bots the exact dimensions to render instantly -->
 	<meta property="og:image:width" content="1200" />
