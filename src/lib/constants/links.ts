@@ -1,1 +1,2 @@
 export const GOOGLE_PLAY_LINK = "https://play.google.com/store/apps/details?id=com.qmstudio.quizmasters";
+export const APP_STORE_LINK = "https://apps.apple.com/us/app/quiz-masters-trivia-tactics/id6755911579";

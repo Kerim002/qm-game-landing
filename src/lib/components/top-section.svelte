@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from "svelte";
-	import { GOOGLE_PLAY_LINK } from "../constants/links";
+	import { GOOGLE_PLAY_LINK, APP_STORE_LINK } from "../constants/links";
 	let loaded = $state(false);
 
 	onMount(() => {
@@ -62,11 +62,11 @@
 					>
 					Play Now — Free
 				</a>
-				<a href="#" class="btn btn-ghost btn-lg">📱 Download App</a>
+				<a href={APP_STORE_LINK} target="_blank" class="btn btn-ghost btn-lg">📱 Download App</a>
 			</div>
 
 			<div class="store-row" class:in={loaded} style="--d:1.06s">
-				<a href="#" class="store-chip">
+				<a href={APP_STORE_LINK} target="_blank" class="store-chip">
 					<svg
 						width="18"
 						height="18"
