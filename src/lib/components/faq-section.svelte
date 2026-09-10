@@ -20,7 +20,7 @@
         },
         {
             q: "How do power-ups work?",
-            a: "Earn coins by winning matches, then spend them in the in-game shop. Clue Flower removes 2 wrong answers, Teleport moves you to any captured tile, and Heal restores HP.",
+            a: "Earn coins by winning matches, then spend them in the in-game shop. Bomb removes 2 wrong answers, Teleport moves you to any outpost you own, and Heal restores HP.",
         },
         {
             q: "Is there a mobile app?",

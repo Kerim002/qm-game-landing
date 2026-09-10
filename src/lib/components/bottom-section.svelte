@@ -30,7 +30,7 @@
 
 		<h2>Ready to <span>Battle?</span></h2>
 		<p>
-			Join 500,000+ players competing in real-time trivia battles. It's
+			Join 10,000+ players competing in real-time trivia battles. It's
 			free — no excuses.
 		</p>
 

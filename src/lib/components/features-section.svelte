@@ -24,8 +24,8 @@
 			eyebrow: 'Strategy',
 			badge:   '🛒 Power-ups',
 			title:   'Tactical Board — Master the Shop!',
-			desc:    "Coins aren't just for show. Buy power-ups mid-battle: Clue Flower removes wrong answers, Teleport lets you jump tiles, and Heal restores your HP and so many other skills.",
-			pills:   ['🌸 Clue Flower', '✨ Teleport', '💊 Heal'],
+			desc:    "Coins aren't just for show. Buy power-ups mid-battle: Bomb removes wrong answers, Teleport lets you jump to your outposts, and Heal restores your HP and so many other skills.",
+			pills:   ['💣 Bomb', '🌀 Teleport', '❤️ Heal'],
 			reverse: false,
 			placeholder: { icon: '🛒', label: 'In-game shop screen', size: '390 × 760 px · JPEG portrait' },
 			imgFile: '/images/shop.jpg',
@@ -125,9 +125,9 @@
 									  - Semi-transparent dark overlay over a blurred game board
 									  - "Shop" title with a 💰 180 coin counter top-right
 									  - 3 power-up cards in a horizontal row:
-									    · 🌸 Clue Flower — "Remove 2 wrong answers" — 30 coins
-									    · ✨ Teleport    — "Jump to any tile"        — 50 coins
-									    · 💊 Heal        — "Restore 20 HP"           — 40 coins
+									    · 💣 Bomb     — "Remove 2 wrong answers"   — 30 coins
+									    · 🌀 Teleport — "Jump to any outpost you own" — 50 coins
+									    · ❤️ Heal     — "Restore 15 HP"             — 40 coins
 									  - Selected card (Teleport) has a glowing yellow border
 									  - "BUY" button in yellow-gold under the selected card
 									  - Each card has a small item illustration + description
